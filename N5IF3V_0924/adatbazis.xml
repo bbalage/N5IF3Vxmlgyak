@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE adatbazis [
+        <!ELEMENT adatbazis (dolgozo*)>
+        <!ELEMENT dolgozo (nev, fizetes)>
+        <!ATTLIST dolgozo kod ID #REQUIRED>
+        <!ELEMENT nev (#PCDATA)>
+        <!ELEMENT fizetes (#PCDATA)>
+        ]>
+
+<adatbazis>
+    <dolgozo kod=":1">
+        <nev>Madár Márton</nev>
+        <fizetes>100000</fizetes>
+    </dolgozo>
+    <dolgozo kod=":2">
+        <nev>Veréb Hortenzia</nev>
+        <fizetes>160000</fizetes>
+    </dolgozo>
+</adatbazis>
