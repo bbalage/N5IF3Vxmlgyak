@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="jegyzet.xsd">
+    <to>Péter</to>
+    <from>Jani</from>
+    <heading>Emlékeztető</heading>
+    <body>Ne felejtsd el, amit megbeszéltünk!</body>
+</note>
