@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="nevjegykartya.xsd">
+    <nevjegykartya id="1">
+        <nev>Bolyki Balázs</nev>
+        <ceg>
+            <cim>
+                <iranyitoszam>3600</iranyitoszam>
+                <varos>Ózd</varos>
+                <utca>Március 15. utca</utca>
+                <hazszam>18</hazszam>
+            </cim>
+            <nev>Gereblyéző kft.</nev>
+            <telefonszam korzet="36"> 304040400</telefonszam>
+            <weblap>www.ceg.hu</weblap>
+        </ceg>
+        <beosztas>Vezető szakács</beosztas>
+        <telefonszam korzet="36">7367777</telefonszam>
+        <email>bbalage0@gmail.com</email>
+    </nevjegykartya>
+
+</nevjegykartyak>

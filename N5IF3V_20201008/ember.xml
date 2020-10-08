@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<emberek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ember.xsd">
+    <ember>
+        <nev1>Bolyki</nev1>
+        <fizetes>600000</fizetes>
+        <nev>Balázs</nev>
+    </ember>
+    <ember>
+        <nev1>Hunyadi</nev1>
+        <fizetes>1000000</fizetes>
+        <nev>Mátyás</nev>
+    </ember>
+</emberek>

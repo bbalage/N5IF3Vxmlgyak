@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="emberek">
+    <xs:complexType>
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="ember" type="embertype"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+    <xs:complexType name="embertype">
+        <xs:sequence>
+            <xs:element name="nev1" type="xs:string"/>
+            <xs:element name="fizetes" type="xs:int"/>
+            <xs:element name="nev" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

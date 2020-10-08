@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ER xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="ERkonvSchema.xsd">
+    <A a="1">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <c>
+            <nonename1></nonename1>
+            <nonename2></nonename2>
+        </c>
+    </A>
+
+    <B a="1">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <C_a_ref></C_a_ref>
+    </B>
+
+    <AB_CONN>
+        <A_a_ref></A_a_ref>
+        <B_a_ref></B_a_ref>
+        <c></c>
+    </AB_CONN>
+
+    <C a="1">
+        <b></b>
+    </C>
+</ER>
