@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ER">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="A" maxOccurs="unbounded" type="A_type"/>
+            <xs:element name="B" maxOccurs="unbounded" type="B_type"/>
+            <xs:element name="switcher" maxOccurs="unbounded" type="switcher_type"/>
+            <xs:element name="C" maxOccurs="unbounded" type="C_type"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:key name="KA">
+        <xs:selector xpath="A"/>
+        <xs:field xpath="@a"/>
+    </xs:key>
+
+    <xs:key name="KB">
+        <xs:selector xpath="B"/>
+        <xs:field xpath="@a"/>
+    </xs:key>
+
+    <xs:key name="KC">
+        <xs:selector xpath="C"/>
+        <xs:field xpath="@a"/>
+    </xs:key>
+
+    <xs:keyref name="FK_KA" refer="KA">
+        <xs:selector xpath="switcher"></xs:selector>
+        <xs:field xpath="a_fkey"></xs:field>
+    </xs:keyref>
+
+    <xs:keyref name="FK_KB" refer="KB">
+        <xs:selector xpath="switcher"></xs:selector>
+        <xs:field xpath="b_fkey"></xs:field>
+    </xs:keyref>
+
+    <xs:keyref name="FK_KB_2" refer="KB">
+        <xs:selector xpath="C"></xs:selector>
+        <xs:field xpath="b_fkey"></xs:field>
+    </xs:keyref>
+</xs:element>
+
+    <xs:complexType name="A_type">
+        <xs:sequence>
+            <xs:element name="b" type="b_type" maxOccurs="unbounded"/>
+            <xs:element name="c" type="c_type"/>
+        </xs:sequence>
+        <xs:attribute name="a" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="b_type" >
+        <xs:sequence>
+            <xs:element name="x" type="xs:string"/>
+            <xs:element name="y" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="c_type" >
+        <xs:sequence>
+            <xs:element name="u" type="xs:string"/>
+            <xs:element name="v" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="B_type">
+        <xs:sequence>
+            <xs:element name="b" type="b_type"/>
+        </xs:sequence>
+        <xs:attribute name="a" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="switcher_type">
+        <xs:sequence>
+            <xs:element name="c" type="xs:string" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="a_fkey" type="xs:int" use="required"/>
+        <xs:attribute name="b_fkey" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="C_type">
+        <xs:sequence>
+            <xs:element name="b" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="a" type="xs:int" use="required"/>
+        <xs:attribute name="b_fkey" type="xs:int" use="required"/>
+    </xs:complexType>
+
+
+</xs:schema>

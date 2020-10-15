@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ER xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="ERtoXSD.xsd">
+    <A a="1">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <c>
+            <u></u>
+            <v></v>
+        </c>
+    </A>
+    <A a="2">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <c>
+            <u></u>
+            <v></v>
+        </c>
+    </A>
+
+    <B a="1">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+    </B>
+
+    <switcher a_fkey="1" b_fkey="1">
+        <c></c>
+    </switcher>
+
+    <C a="1" b_fkey="2">
+        <b></b>
+    </C>
+</ER>
