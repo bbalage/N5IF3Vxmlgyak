@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <!DOCTYPE mozi SYSTEM "mozi.dtd">-->
+
+<mozi>
+    <filmek>
+        <film id = "txn_nxm_2jb" mufaj="horror">
+            <rendezo id="nzk_4xm_2jb" nev="alex"/>
+            <szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"/>
+            <iro id="trv_4xm_2jb"/>
+        </film>
+        <film>
+            <rendezo id="nzk_4xm_2jb_1" nev="Tom"/>
+            <szinesz id="u5q_4xm_2jb_1" nev="Mark_Marco"/>
+            <iro id="trv_4xm_2jb_1" nev="Barnabás"/>
+            <producer id="1" nev="Makk Marcell"/>
+            <dramaturg id="1" nev="Shakespeare János"/>
+            <operatőr id="1" nev="Halas Halamér"/>
+        </film>
+        <film>
+            <rendezo id="nzk_4xm_2jb_2" nev="Arcos András"/>
+            <szinesz id="u5q_4xm_2jb_2" nev="Mark_Marco"/>
+            <iro id="trv_4xm_2jb_2" nev="Barnabás"/>
+            <producer id="2" nev="Bad Betti"/>
+            <dramaturg id="2" nev="Arany János"/>
+            <operatőr id="2" nev="Halas Halamér"/>
+        </film>
+    </filmek>
+</mozi>

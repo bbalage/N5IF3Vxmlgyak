@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<konferencia>
+    <cím>Hosszú út 11.</cím>
+    <hallgatók>
+        <hallgató>
+            <név>Bagoly Berta</név>
+            <lakcím>Ózd, Nincs út 12.</lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>XXX. előadó</helyszín>
+    <előadó>
+        <név>Nagy előadó 1.</név>
+        <adószám>1122334455</adószám>
+        <lakcím>3600. Ózd, Végtelen út 100000</lakcím>
+    </előadó>
+    <dátum>2020.02.05.</dátum>
+</konferencia>

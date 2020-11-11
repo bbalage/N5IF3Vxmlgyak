@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hét>
+    <orarend>
+        <ora id="1" tipus="Előadás és gyakorlat">
+            <targy>Szoftvertesztelés</targy>
+            <idopont>hétfő, 8:00-12:00</idopont>
+            <helyszin>Inf/103</helyszin>
+            <oktato>Tompa Tamás</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="2" tipus="Előadás">
+            <targy>Mesterséges intelligencia alapok</targy>
+            <idopont>hétfő, 12:00-15:00</idopont>
+            <helyszin>XXX. előadó</helyszin>
+            <oktato>Dr. Dudás László</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="4" tipus="Előadás">
+            <targy>Web technológiák</targy>
+            <idopont>hétfő, 15:00-17:00</idopont>
+            <helyszin>Inf/103</helyszin>
+            <oktato>Agárdi Anita</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="5" tipus="Gyakorlat">
+            <targy>Web technológiák</targy>
+            <idopont>hétfő, 17:00-19:00</idopont>
+            <helyszin>Inf/16</helyszin>
+            <oktato>Sátán Ádám</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="6" tipus="Gyakorlat">
+            <targy>Web Java</targy>
+            <idopont>csütörtök, 10:00-12:00</idopont>
+            <helyszin>Inf/101</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="7" tipus="Előadás">
+            <targy>Web Java</targy>
+            <idopont>kedd, 10:00-12:00</idopont>
+            <helyszin>Inf/103</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="8" tipus="Előadás">
+            <targy>Adatkezelés XML környezetben</targy>
+            <idopont>kedd, 12:00-14:00</idopont>
+            <helyszin>XXXVII. előadó</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+        <ora id="9" tipus="Gyakorlat">
+            <targy>Adatkezelés XML környezetben</targy>
+            <idopont>csütörtök, 12:00-14:00</idopont>
+            <helyszin>XXXVII. előadó</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>mérnökinformatikus alapszak</szak>
+        </ora>
+    </orarend>
+</hét>

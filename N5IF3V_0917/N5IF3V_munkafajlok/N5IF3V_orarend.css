@@ -1,0 +1,25 @@
+body{
+    background: #333333;
+}
+table{
+    border: 5px solid black;
+    width: 100%;
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+th{
+    background: #4477FF;
+}
+td{
+    background:#44AAFF;
+}
+td.timetable{
+    width:10%;
+    font-weight: bold;
+}
+td.classtable{
+    width: 15%;
+}
