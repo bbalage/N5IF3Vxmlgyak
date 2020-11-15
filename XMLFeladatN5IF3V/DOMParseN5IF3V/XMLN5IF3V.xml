@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sector>
+	
+	<material id="H2O">
+		<name>water</name>
+		<weight>18</weight>
+		<usage>
+			<use>nutrition</use>
+			<use>fuel</use>
+			<use>machinery part</use>
+		</usage>
+	</material>
+	<material id="Si">
+		<name>silicon</name>
+		<weight>28</weight>
+		<usage>
+			<use>electronics</use>
+		</usage>
+	</material>
+	
+	<star id="0E4J4">
+		<name>Sun</name>
+		<mass>1.989e30</mass>
+		<radius>696342</radius>
+		<heat>
+			<surface>3800</surface>
+			<core>15700000</core>
+		</heat>
+		<type>yellow dwarf</type>
+	</star>
+	
+	<planet id="1">
+		<name>Earth</name>
+		<radius>6371</radius>
+		<mass>5.97237e24</mass>
+		<type>solid</type>
+	</planet>
+	
+	<moon id="1">
+		<owner_planet>1</owner_planet>
+		<name>Luna</name>
+		<mass>7.342e24</mass>
+		<radius>1737</radius>
+	</moon>
+	
+	<star_material>
+		<in_star></in_star>
+		<of_material></of_material>
+		<amount></amount>
+	</star_material>
+	
+	<planet_material>
+		<in_planet></in_planet>
+		<of_material></of_material>
+		<amount></amount>
+	</planet_material>
+	
+	<moon_material>
+		<in_moon></in_moon>
+		<of_material></of_material>
+		<amount></amount>
+	</moon_material>
+
+	<planet_of>
+		<owner_star>0E4J4</owner_star>
+		<orbiting_planet>1</orbiting_planet>
+		<smallest_dist></smallest_dist>
+		<greatest_dist></greatest_dist>
+	</planet_of>
+
+</sector>
