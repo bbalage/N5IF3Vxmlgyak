@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<sector>
+<sector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="XMLSchemaN5IF3V.xsd">
 	
+	<material id="H">
+		<name>hydrogen</name>
+		<weight>1</weight>
+		<!--in gramms-s-->
+		<usage>
+			<use>fuel</use>
+		</usage>
+	</material>
+	<material id="O">
+		<name>oxygen</name>
+		<weight>16</weight>
+		<usage>
+			<use>life condition</use>
+		</usage>
+	</material>
 	<material id="H2O">
 		<name>water</name>
 		<weight>18</weight>
 		<usage>
-			<use>nutrition</use>
+			<use>life condition</use>
 			<use>fuel</use>
 			<use>machinery part</use>
 		</usage>
@@ -22,7 +38,9 @@
 	<star id="0E4J4">
 		<name>Sun</name>
 		<mass>1.989e30</mass>
+		<!--in kg-s-->
 		<radius>696342</radius>
+		<!--in km-s-->
 		<heat>
 			<surface>3800</surface>
 			<core>15700000</core>
@@ -34,39 +52,54 @@
 		<name>Earth</name>
 		<radius>6371</radius>
 		<mass>5.97237e24</mass>
+		<!--in kg-s-->
 		<type>solid</type>
 	</planet>
 	
 	<moon id="1">
 		<owner_planet>1</owner_planet>
 		<name>Luna</name>
-		<mass>7.342e24</mass>
+		<mass>7.342e22</mass>
+		<!--in kg-s-->
 		<radius>1737</radius>
+		<!--in km-s-->
 	</moon>
 	
 	<star_material>
-		<in_star></in_star>
-		<of_material></of_material>
-		<amount></amount>
+		<in_star>0E4J4</in_star>
+		<of_material>H2O</of_material>
+		<amount>1.123e10</amount>
+		<!--in kg-s-->
 	</star_material>
 	
 	<planet_material>
-		<in_planet></in_planet>
-		<of_material></of_material>
-		<amount></amount>
+		<in_planet>1</in_planet>
+		<of_material>H2O</of_material>
+		<amount>1.194474e21</amount>
+		<!--in kg-s-->
 	</planet_material>
 	
 	<moon_material>
-		<in_moon></in_moon>
-		<of_material></of_material>
-		<amount></amount>
+		<in_moon>1</in_moon>
+		<of_material>Si</of_material>
+		<amount>1.4684e22</amount>
+		<!--in kg-s-->
+	</moon_material>
+	<moon_material>
+		<in_moon>1</in_moon>
+		<of_material>O</of_material>
+		<amount>3.15706e22</amount>
 	</moon_material>
 
 	<planet_of>
 		<owner_star>0E4J4</owner_star>
 		<orbiting_planet>1</orbiting_planet>
-		<smallest_dist></smallest_dist>
-		<greatest_dist></greatest_dist>
+		<average_dist>1.49e8</average_dist>
+		<!--in km-s-->
+		<smallest_dist>1.46e8</smallest_dist>
+		<!--in km-s-->
+		<greatest_dist>1.52e8</greatest_dist>
+		<!--in km-s-->
 	</planet_of>
 
 </sector>
