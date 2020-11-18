@@ -119,7 +119,7 @@ public class DOMModifyN5IF3V {
 		tr.setOutputProperty(OutputKeys.METHOD, "xml");
 		tr.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-2");
 		tr.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
-		tr.transform(domsource, new StreamResult(new FileOutputStream("XMLN5IF3V.xml")));
+		tr.transform(domsource, new StreamResult(new FileOutputStream("XMLN5IF3V_mod.xml")));
 		System.out.println("Modification succesful!\n");
 	}
 

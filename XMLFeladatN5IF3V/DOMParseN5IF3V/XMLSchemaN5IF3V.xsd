@@ -3,14 +3,14 @@
 <xs:element name="sector">
 	<xs:complexType>
 		<xs:sequence>
-			<xs:element name="material" maxOccurs="unbounded" type="material_type"/>
-			<xs:element name="star" maxOccurs="unbounded" type="star_type"/>
-			<xs:element name="planet" maxOccurs="unbounded" type="planet_type"/>
-			<xs:element name="moon" maxOccurs="unbounded" type="moon_type"/>
-			<xs:element name="star_material" maxOccurs="unbounded" type="star_material_type"/>
-			<xs:element name="planet_material" maxOccurs="unbounded" type="planet_material_type"/>
-			<xs:element name="moon_material" maxOccurs="unbounded" type="moon_material_type"/>
-			<xs:element name="planet_of" maxOccurs="unbounded" type="planet_of_type"/>
+			<xs:element name="materials" type="materials_type"/>
+			<xs:element name="stars" type="stars_type"/>
+			<xs:element name="planets" type="planets_type"/>
+			<xs:element name="moons" type="moons_type"/>
+			<xs:element name="star_materials" type="star_materials_type"/>
+			<xs:element name="planet_materials" type="planet_materials_type"/>
+			<xs:element name="moon_materials" type="moon_materials_type"/>
+			<xs:element name="planet_ofs" type="planet_ofs_type"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:key name="K_material">
@@ -67,6 +67,47 @@
 	</xs:keyref>
 </xs:element>
 
+<xs:complexType name="materials_type">
+	<xs:sequence>
+		<xs:element name="material" maxOccurs="unbounded" type="material_type"/>		
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="stars_type">
+	<xs:sequence>
+		<xs:element name="star" maxOccurs="unbounded" type="star_type"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="planets_type">
+	<xs:sequence>
+		<xs:element name="planet" maxOccurs="unbounded" type="planet_type"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="moons_type">
+	<xs:sequence>
+		<xs:element name="moon" maxOccurs="unbounded" type="moon_type"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="star_materials_type">
+	<xs:sequence>
+		<xs:element name="star_material" maxOccurs="unbounded" type="star_material_type"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="planet_materials_type">
+	<xs:sequence>
+		<xs:element name="planet_material" maxOccurs="unbounded" type="planet_material_type"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="moon_materials_type">
+	<xs:sequence>
+		<xs:element name="moon_material" maxOccurs="unbounded" type="moon_material_type"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="planet_ofs_type">
+	<xs:sequence>
+		<xs:element name="planet_of" maxOccurs="unbounded" type="planet_of_type"/>
+	</xs:sequence>
+</xs:complexType>
+			
 <xs:complexType name="material_type">
 	<xs:sequence>
 		<xs:element name="name" type="xs:string"/>
