@@ -13,15 +13,18 @@ public class DOMReadN5IF3V {
 
 	private Document document;
 	
+	/*Document Object Model gets read from file in the constructor.*/
 	public DOMReadN5IF3V() throws IOException, ParserConfigurationException, SAXException{
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		document = db.parse(new File("XMLN5IF3V.xml"));
 	}
 	
+	/*Run the class. The class instantiates itself in its main method.*/
 	public static void main(String[] args) {
 		try {
 			DOMReadN5IF3V ownInstance = new DOMReadN5IF3V();
+			/*Print all planets.*/
 			ownInstance.printAllPlanets();
 		}
 		catch(Exception exc) {
@@ -29,6 +32,7 @@ public class DOMReadN5IF3V {
 		}
 	}
 	
+	/*Function to read all planets.*/
 	public void printAllPlanets() throws MyAppException{
 		NodeList planets = document.getElementsByTagName("planet");
 		

@@ -23,16 +23,21 @@ public class DOMModifyN5IF3V {
 
 	private Document document;
 	
+	/*Document Object Model gets initialized in the constructor.*/
 	public DOMModifyN5IF3V() throws IOException, ParserConfigurationException, SAXException{
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		/*Has to be set so the namespace declaration part of the xml 
+		 * document won't cause an error at validation.*/
 		dbf.setNamespaceAware(true);
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		document = db.parse(new File("XMLN5IF3V.xml"));
 	}
 	
+	/*When the class is run, it instantiates itself in the main method.*/
 	public static void main(String[] args) {
 		try {
 			DOMModifyN5IF3V ownInstance = new DOMModifyN5IF3V();
+			/*Modify the planet.*/
 			ownInstance.consoleModifySession();
 		}
 		catch(Exception exc) {
@@ -113,12 +118,16 @@ public class DOMModifyN5IF3V {
 		DOMSource domsource = new DOMSource(document);
 		validator.validate(domsource);
 		
-		/*Save the new data of the planet into the file.*/
+		/*Save the new data of the planet into the file.
+		 * First calibrate the transformer.*/
 		Transformer tr = TransformerFactory.newInstance().newTransformer();
 		tr.setOutputProperty(OutputKeys.INDENT, "yes");
 		tr.setOutputProperty(OutputKeys.METHOD, "xml");
 		tr.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-2");
 		tr.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+		/*Write the result into the file.
+		 * XMLN5IF3V_mod.xml is a support file, which exist so the original data don't get 
+		 * messed up.*/
 		tr.transform(domsource, new StreamResult(new FileOutputStream("XMLN5IF3V_mod.xml")));
 		System.out.println("Modification succesful!\n");
 	}
