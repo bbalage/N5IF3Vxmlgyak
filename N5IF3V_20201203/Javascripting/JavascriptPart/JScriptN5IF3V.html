@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json Javascript</title>
+    <script>
+        function allJSON(){
+            //var filereader = new FileReader();
+            //filereader.readAsText()
+            var data = JSON.parse("[\n" +
+                "  {\n" +
+                "    \"author\": \"Nyékyné Dr. Gaizler Judit\",\n" +
+                "    \"language\": \"Java 2 I-II. -Útikalauz programozóknak 5.0\"\n" +
+                "  },\n" +
+                "  {\n" +
+                "  \"author\": \"Kovács László\",\n" +
+                "  \"language\": \"Adatkezelés XML környezetben\"\n" +
+                "  }\n" +
+                "]");
+            html = "<p>";
+            for(i = 0; i < data.length; i++){
+                html += "</p><p>Author name: "+data[i].author;
+                html += "</p><p>Language: "+data[i].language;
+            }
+            html += "</p>"
+            //html += data[0].author;
+            return html;
+        }
+        function writeToJSON(){
+            document.getElementById("jsoncontent").innerHTML=allJSON();
+        }
+    </script>
+</head>
+<body>
+<h1>JSON megvalósítása - JavaScript</h1>
+<div id="jsoncontent" onclick=writeToJSON()>
+Listázz!
+</div>
+</body>
+</html>
